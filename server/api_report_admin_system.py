@@ -36,7 +36,7 @@ def get_report(req: ReportRequest):
         "event": event['name'],
         "registrations": count,
         "revenue": count * event['fee'],
-        "capacity": event['max_capacity']
+        "capacity": event['capacity']  
     }
 
 @app.post("/audit")
