@@ -34,18 +34,6 @@ production-style environments.
 
 ------------------------------------------------------------------------
 
-# 📸 Screenshots
-
-### 🖥️ Console Client
-
-`<img src="Screenshot_Console.png" width="600">`{=html}
-
-### ⚙️ API Server Logs
-
-`<img src="Screenshot_Server.png" width="600">`{=html}
-
-------------------------------------------------------------------------
-
 # 📘 API Documentation
 
 After running the server, open:
