@@ -81,8 +81,8 @@ EventManagementSystem/
     ├── members.jsonl
     ├── events.jsonl
     ├── registrations.jsonl
-    ├── admin.json
-    └── audit.log
+    ├── admin.json.                 
+    └── audit.log                   # 📝 Auto add the Data
 ```
 
 ------------------------------------------------------------------------
