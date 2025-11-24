@@ -11,6 +11,7 @@ FILES = {
     "admin": os.path.join(DATA_DIR, "admin.json")
 }
 
+
 def setup():
     if not os.path.exists(DATA_DIR):
         os.makedirs(DATA_DIR)

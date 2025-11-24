@@ -3,6 +3,7 @@ import requests
 URL = "http://127.0.0.1:8000/reg"
 
 def menu():
+    
     print("\n--- Registration ---")
     data = {
         "member_id": input("Member ID: "),

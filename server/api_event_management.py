@@ -4,6 +4,7 @@ from .storage import read_data, write_data, log_audit
 
 app = FastAPI()
 
+
 class Event(BaseModel):
     id: str
     name: str

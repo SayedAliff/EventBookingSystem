@@ -16,6 +16,7 @@ class AuditFilter(BaseModel):
     filter_type: str
     value: str = None
 
+
 @app.post("/login")
 def login(creds: Login):
     admin = get_admin_creds()

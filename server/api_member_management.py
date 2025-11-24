@@ -10,6 +10,7 @@ class Member(BaseModel):
     level: str
 
 @app.get("/")
+
 def get_members():
     return read_data("members")
 

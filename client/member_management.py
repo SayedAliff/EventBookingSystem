@@ -3,6 +3,7 @@ import requests
 URL = "http://127.0.0.1:8000/member"
 
 def menu():
+    
     while True:
         print("\n--- Member Panel ---")
         print("1. List Members")

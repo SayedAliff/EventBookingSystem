@@ -5,6 +5,7 @@ from .api_registration_system import app as reg_app
 from .api_report_admin_system import app as admin_app
 from .storage import setup
 
+
 setup()
 
 app = FastAPI()

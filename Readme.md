@@ -5,7 +5,7 @@ simplify managing members, events, registrations, and admin-level
 reporting through a clean console interface backed by a FastAPI server.\
 This system ensures secure data handling, clear modular architecture,
 and persistent file-based storage --- designed for academic and
-production-style environments.
+production-style environments....
 
 ------------------------------------------------------------------------
 

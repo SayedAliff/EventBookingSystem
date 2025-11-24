@@ -3,6 +3,7 @@ import os
 
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
+
 import client.member_management as mm
 import client.event_management as em
 import client.registration_system as rs

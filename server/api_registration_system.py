@@ -9,6 +9,7 @@ class Registration(BaseModel):
     event_id: str
 
 @app.post("/")
+
 def register(r: Registration):
     members = read_data("members")
     events = read_data("events")

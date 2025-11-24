@@ -4,6 +4,7 @@ import getpass
 URL = "http://127.0.0.1:8000/admin"
 
 def menu():
+    
     print("\n--- Admin Login ---")
     u = input("User: ")
     p = getpass.getpass("Password: ")
