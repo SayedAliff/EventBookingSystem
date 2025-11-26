@@ -9,7 +9,6 @@ class Registration(BaseModel):
     event_id: str
 
 @app.post("/")
-
 def register(r: Registration):
     members = read_data("members")
     events = read_data("events")
@@ -26,7 +25,18 @@ def register(r: Registration):
     if count >= event['capacity']:
         raise HTTPException(status_code=400, detail="Event is full")
 
-    new_reg = {"id": f"R-{len(regs)+1}", "member_id": r.member_id, "event_id": r.event_id}
+    max_id = 0
+    for reg in regs:
+        try:
+            curr_num = int(reg['id'].split('-')[1])
+            if curr_num > max_id:
+                max_id = curr_num
+        except:
+            continue
+            
+    new_id = f"R-{max_id + 1}"
+
+    new_reg = {"id": new_id, "member_id": r.member_id, "event_id": r.event_id}
     regs.append(new_reg)
     write_data("registrations", regs)
     log_audit(f"REGISTERED: {r.member_id} -> {r.event_id}")
