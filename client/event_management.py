@@ -68,13 +68,10 @@ def menu():
         elif choice == '3':
             eid = get_input("ID to Update: ")
             if not eid: continue
-
-            # Improvement: Validate ID format locally if possible, 
-            # but the real check happens at the server.
             
             print(f"Updating Event {eid}. Enter New Details:")
             
-            # Safe input for numbers
+
             new_name = get_input("New Name: ")
             new_fee = get_input("New Fee: ", float)
             new_capacity = get_input("New Capacity: ", int)

@@ -18,7 +18,6 @@ def menu():
             try:
                 res = requests.get(URL + "/")
                 for m in res.json():
-                    # Display Phone instead of Level
                     print(f"ID: {m['id']}, Name: {m['name']}, Phone: {m['phone']}")
             except: print("Connection Error")
                 
@@ -26,7 +25,7 @@ def menu():
             data = {
                 "id": input("Member ID: "),
                 "name": input("Name: "),
-                "phone": input("Phone Number: ") # Input changed to Phone
+                "phone": input("Phone Number: ") 
             }
             try:
                 res = requests.post(URL + "/", json=data)
@@ -39,7 +38,7 @@ def menu():
             data = {
                 "id": mid,
                 "name": input("New Name: "),
-                "phone": input("New Phone Number: ") # Input changed to Phone
+                "phone": input("New Phone Number: ") 
             }
             try:
                 res = requests.put(f"{URL}/{mid}", json=data)
