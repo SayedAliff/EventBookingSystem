@@ -3,7 +3,6 @@ from pydantic import BaseModel
 from .storage import read_data, write_data, log_audit
 
 app = FastAPI()
-
 class Registration(BaseModel):
     member_id: str
     event_id: str

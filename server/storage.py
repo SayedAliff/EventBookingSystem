@@ -59,8 +59,7 @@ def update_entity(entity_type: str, entity_id: str, new_data: Dict[str, Any]) ->
             
             items[i].update(new_data)
             updated = True
-            break
-            
+            break      
     if updated:
         write_data(entity_type, items)
         log_audit(f"{entity_type.upper()} UPDATED: ID {entity_id}")

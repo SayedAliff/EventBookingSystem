@@ -1,6 +1,5 @@
 import requests
 import sys
-
 URL = "http://127.0.0.1:8000/event"
 
 def get_input(prompt: str, type_func=str, required: bool = True):
@@ -30,7 +29,6 @@ def menu():
         
         choice = input("Choice: ").strip()
         if choice == '0': break
-        
         if choice == '1':
             try:
                 res = requests.get(URL + "/")
@@ -45,12 +43,11 @@ def menu():
             print("Enter New Event Details:")
             event_id = get_input("Event ID: ")
             if not event_id: continue
-            
             name = get_input("Name: ")
             fee = get_input("Fee: ", float)
             capacity = get_input("Capacity: ", int)
 
-            data = {
+            data ={
                 "id": event_id,
                 "name": name,
                 "fee": fee,

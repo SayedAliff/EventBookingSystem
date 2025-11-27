@@ -8,7 +8,6 @@ app = FastAPI()
 class Login(BaseModel):
     username: str
     password: str
-
 class ReportRequest(BaseModel):
     event_id: str
 

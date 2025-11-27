@@ -10,7 +10,6 @@ def menu():
         print("3. Update Member")
         print("4. Delete Member")
         print("0. Back")
-        
         c = input("Choice: ")
         if c == '0': break
         

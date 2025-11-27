@@ -23,10 +23,8 @@ def menu():
         print("\n1. View Audit Log")
         print("2. View Revenue Report")
         print("0. Logout")
-        
         c = input("Choice: ")
         if c == '0': break
-        
         if c == '1':
             try:
                 res = requests.get(URL + "/audit")

@@ -33,6 +33,7 @@ def update_member(mid: str, m: Member):
     
     raise HTTPException(status_code=404, detail="Member not found.")
 
+
 @app.delete("/{mid}")
 def delete_member(mid: str):
     regs = read_data("registrations")
