@@ -34,27 +34,6 @@ production-style environments....
 
 ------------------------------------------------------------------------
 
-# 📘 API Documentation
-
-After running the server, open:
-
-### 📄 Swagger UI
-
-http://127.0.0.1:8000/docs
-
-### 📑 ReDoc
-
-http://127.0.0.1:8000/redoc
-
-APIs include:
-
--   /member/\* --- Member CRUD\
--   /event/\* --- Event CRUD\
--   /registration/\* --- Booking operations\
--   /admin/\* --- Revenue & audit logs
-
-------------------------------------------------------------------------
-
 # 📂 Project Structure
 
 ``` bash
@@ -218,6 +197,7 @@ python3 client/client.py
 -   Create Event (fee + capacity)
 -   Update Event
 -   Prevent duplicate event IDs
+-   Delete Event
 
 ### 📝 Registration
 
