@@ -51,7 +51,6 @@ This system ensures secure data handling, clear modular architecture, and persis
 -   **Version Control:** Git & GitHub
 
 ---
-
 # 📂 Project Structure
 
 ```bash
@@ -80,6 +79,10 @@ EventManagementSystem/
     ├── registrations.txt
     ├── admin.txt
     └── audit.txt
+
+
+
+```
 
 ------------------------------------------------------------------------
 
