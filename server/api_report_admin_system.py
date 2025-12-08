@@ -8,6 +8,7 @@ app = FastAPI()
 class Login(BaseModel):
     username: str
     password: str
+    
 class ReportRequest(BaseModel):
     event_id: str
 
@@ -36,9 +37,9 @@ def get_report(req: ReportRequest):
 
 @app.get("/audit")
 def view_audit():
-    if not os.path.exists("data/audit.log"): return {"logs": []}
+    if not os.path.exists("data/audit.txt"): return {"logs": []}
     
-    with open("data/audit.log", 'r') as f:
+    with open("data/audit.txt", 'r') as f:
         lines = f.readlines()
         
     return {"logs": lines}

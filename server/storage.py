@@ -5,11 +5,11 @@ from typing import Dict, Any
 
 DATA_DIR = "data"
 FILES = {
-    "members": os.path.join(DATA_DIR, "members.jsonl"),
-    "events": os.path.join(DATA_DIR, "events.jsonl"),
-    "registrations": os.path.join(DATA_DIR, "registrations.jsonl"),
-    "audit": os.path.join(DATA_DIR, "audit.log"),
-    "admin": os.path.join(DATA_DIR, "admin.json")
+    "members": os.path.join(DATA_DIR, "members.txt"),
+    "events": os.path.join(DATA_DIR, "events.txt"),
+    "registrations": os.path.join(DATA_DIR, "registrations.txt"),
+    "audit": os.path.join(DATA_DIR, "audit.txt"),
+    "admin": os.path.join(DATA_DIR, "admin.txt")
 }
 
 def setup():
@@ -59,7 +59,8 @@ def update_entity(entity_type: str, entity_id: str, new_data: Dict[str, Any]) ->
             
             items[i].update(new_data)
             updated = True
-            break      
+            break
+            
     if updated:
         write_data(entity_type, items)
         log_audit(f"{entity_type.upper()} UPDATED: ID {entity_id}")
