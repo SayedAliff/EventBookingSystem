@@ -80,3 +80,162 @@ EventManagementSystem/
     ├── registrations.txt
     ├── admin.txt
     └── audit.txt
+
+------------------------------------------------------------------------
+
+# ⚙️ Installation Guide
+
+Below are complete installation steps for **Windows**, **macOS**, and
+**Linux**.
+
+------------------------------------------------------------------------
+
+# 🪟 Windows Installation
+
+### 1️⃣ Install Git
+
+Download: https://git-scm.com/download/win
+
+### 2️⃣ Clone the Repository
+
+``` bash
+git clone https://github.com/SayedAliff/Event-Mangement-System
+cd event-management-system
+```
+
+### 3️⃣ Install Dependencies
+
+``` bash
+pip install fastapi "uvicorn[standard]" requests pydantic
+```
+
+------------------------------------------------------------------------
+
+# 🍎 macOS Installation
+
+### 1️⃣ Install Git
+
+``` bash
+brew install git
+```
+
+### 2️⃣ Clone the Repository
+
+``` bash
+git clone https://github.com/SayedAliff/Event-Mangement-System
+cd event-management-system
+```
+
+### 3️⃣ Install Dependencies
+
+``` bash
+pip3 install fastapi "uvicorn[standard]" requests pydantic
+```
+
+------------------------------------------------------------------------
+
+# 🐧 Linux Installation
+
+### 1️⃣ Install Git
+
+Ubuntu / Debian:
+
+``` bash
+sudo apt update
+sudo apt install git -y
+```
+
+Fedora:
+
+``` bash
+sudo dnf install git -y
+```
+
+### 2️⃣ Clone the Repository
+
+``` bash
+git clone https://github.com/your-username/event-management-system.git
+cd event-management-system
+```
+
+### 3️⃣ Install Dependencies
+
+``` bash
+pip3 install fastapi "uvicorn[standard]" requests pydantic
+```
+
+------------------------------------------------------------------------
+
+# ▶️ Running the System
+
+## 1️⃣ Start the Server
+
+Windows:
+
+``` bash
+python main.py
+```
+
+macOS / Linux:
+
+``` bash
+python3 main.py
+```
+
+------------------------------------------------------------------------
+
+## 2️⃣ Start the Console Client
+
+Windows:
+
+``` bash
+python client/client.py
+```
+
+macOS / Linux:
+
+``` bash
+python3 client/client.py
+```
+
+------------------------------------------------------------------------
+
+# 🎮 User Guide
+
+### 👤 Member Management
+
+- Add Member
+- List Members
+- Update Member
+- Delete Members
+
+### 🗓️ Event Management
+
+- Create Event (fee + capacity)
+- Update Event
+- Prevent duplicate event IDs
+- Delete Event
+
+### 📝 Registration
+
+- Register Member
+- Auto-check capacity
+- Prevent duplicate entry
+
+### 🔐 Admin Panel
+
+- Login: Username: admin | password: 123
+- View Revenue
+- View Audit Log
+
+------------------------------------------------------------------------
+
+# 🤝 Contributing
+
+1. Fork
+2. Create Branch
+3. Commit
+4. Push
+5. Pull Request
+
+------------------------------------------------------------------------ 
